@@ -1,4 +1,4 @@
-'use strict';
+
 //console.log("started");
 var money = prompt("Сколько вы расходуете за месяц?","");
 var time = prompt("Введите дату в формате YYYY-MM-DD","");
