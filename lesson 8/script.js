@@ -1,8 +1,15 @@
-
+'use strict';
 //console.log("started");
-var money = +prompt("Сколько вы расходуете за месяц?","");
-var time = prompt("Введите дату в формате YYYY-MM-DD","");
-var appData = {
+let money, time;
+function start(){
+    money = +prompt("Сколько вы расходуете за месяц?","");
+    time = prompt("Введите дату в формате YYYY-MM-DD","");
+    while(isNaN(money) || money == "" || money == null){
+        money = +prompt("Сколько вы расходуете за месяц?","");
+    }    
+}
+
+let appData = {
     budget: money,
     timeData: time,
     expenses:{},
